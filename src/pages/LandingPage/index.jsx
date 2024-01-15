@@ -11,13 +11,16 @@ const LandingPagePage = () => {
         <Header className="flex md:flex-col flex-row md:gap-10 items-center justify-between md:pl-[] md:pr-[] sm:px-5 px-[12%] py-2 w-full" />
         <div className="flex flex-col md:gap-10 items-center justify-start w-full">
           <div className="md:h-[11381px] sm:h-[7902px] h-[8500px] md:px-5 relative w-full">
+          {/* //! DECORATION BACKGROUND */}
             <Img
-              className="h-[301px] mt-[607px] mx-auto object-cover md:w-full"
+              className="sm:hidden h-[301px] mt-[607px] mx-auto object-cover md:w-full"
               src="images/img_group10680.png"
               alt="804191traced"
             />
-            <div className="absolute flex flex-col md:gap-10 gap-[184px] h-auto inset-[0] items-center justify-between m-24 w-auto md:w-full">
-              <div className="flex flex-col md:gap-10 gap-[106px] items-center justify-start md:px-10 sm:px-5 px-[12%] w-full">
+          {/* //! END OF DECORATION BACKGROUND */}
+            <div className="absolute flex flex-col md:gap-10 gap-[184px] h-auto inset-[0] items-center justify-between sm:m-[24px] m-24 w-auto border-4 border-red-500">
+            {/*//? HERO SECTION //////////////////// */}
+              <div className="flex flex-col md:gap-10 gap-[106px] items-center justify-start sm:px-0 px-[12%] w-full">
                 <div className="flex flex-col gap-6 items-center justify-start w-auto md:w-full">
                   <div className="flex flex-col gap-4 items-center justify-start w-auto md:w-full">
                     <Img
@@ -55,11 +58,12 @@ const LandingPagePage = () => {
                   </Button>
                 </div>
                 <Img
-                  className="md:h-[570px] h-auto object-cover rounded-[50px] w-auto md:w-full"
+                  className="h-auto object-cover rounded-[50px] w-auto md:w-full"
                   src="images/img_img20230924195035.png"
                   alt="img202309241950"
                 />
               </div>
+              {/* //? TENTANG KAMI SECTION ///////////////// */}
               <div
                 className="flex flex-col md:gap-10 gap-[60px] items-center justify-start w-auto md:w-full"
                 id="block2"
@@ -112,7 +116,7 @@ const LandingPagePage = () => {
                       alt="imageFifteen"
                     />
                   </div>
-                  <div className="bg-white-A700_bc flex flex-col h-[347px] items-center justify-center p-[70px] md:px-10 sm:px-5 rounded-[26px] w-[347px]">
+                  <div className="bg-white-A700_bc flex flex-col sm:h-[303px] h-[347px] items-center justify-center sm:p-[46px] p-[70px] md:px-10 sm:px-5 rounded-[26px] sm:w-[303px] w-[347px]">
                     <Img
                       className="h-[194px] md:h-auto my-1.5 object-cover w-full"
                       src="images/img_image19.png"
@@ -128,6 +132,8 @@ const LandingPagePage = () => {
                   </div>
                 </div>
               </div>
+
+              {/* //? FITUR SECTION /////////////////////// */}
               <div className="flex flex-col font-montserrat md:gap-10 gap-[60px] items-center justify-start w-auto md:w-full">
                 <Text
                   className="max-w-[1084px] md:max-w-full sm:text-[40px] md:text-[46px] text-[50px] text-center text-gray-800 tracking-[0.15px]"
@@ -142,9 +148,9 @@ const LandingPagePage = () => {
                       src="images/img_screenshot20230925214358.png"
                       alt="screenshot20230"
                     />
-                    <div className="flex flex-col gap-[30px] items-start justify-start w-auto md:w-full">
+                    <div className="flex flex-col gap-[30px] items-start sm:items-center justify-start w-auto md:w-full">
                       <Text
-                        className="leading-[34.00px] max-w-[610px] md:max-w-full text-gray-600 text-xl tracking-[0.20px]"
+                        className="leading-[34.00px] max-w-[610px] sm:text-center md:max-w-full text-gray-600 text-xl tracking-[0.20px]"
                         size="txtNunitoMedium20"
                       >
                         Di Raja Roti Group, kami bangga dengan komitmen kami
@@ -168,6 +174,8 @@ const LandingPagePage = () => {
                     </div>
                   </div>
                   <div className="flex flex-col md:gap-10 gap-[106px] items-start justify-start w-auto md:w-full">
+
+                  {/* //! FITUR 1 */}
                     <div className="flex md:flex-col flex-row md:gap-10 gap-[73px] items-center justify-start w-auto md:w-full">
                       <div className="flex flex-col gap-[25px] items-start justify-start w-auto md:w-full">
                         <div className="flex md:flex-col flex-row font-montserrat gap-8 items-center justify-start w-full">
@@ -178,14 +186,14 @@ const LandingPagePage = () => {
                             1
                           </Text>
                           <Text
-                            className="flex-1 max-w-[518px] md:max-w-full sm:text-[31px] md:text-[33px] text-[35px] text-gray-800 tracking-[0.11px]"
+                            className="sm:text-center flex-1 max-w-[518px] md:max-w-full sm:text-[31px] md:text-[33px] text-[35px] text-gray-800 tracking-[0.11px]"
                             size="txtMontserratSemiBold35"
                           >
                             Inovasi Teknologi untuk Meningkatkan Industri
                           </Text>
                         </div>
                         <Text
-                          className="leading-[34.00px] max-w-[610px] md:max-w-full text-gray-600 text-xl tracking-[0.20px]"
+                          className="sm:text-center leading-[34.00px] max-w-[610px] md:max-w-full text-gray-600 text-xl tracking-[0.20px]"
                           size="txtNunitoMedium20"
                         >
                           Di Raja Roti Group, kami memegang standar tertinggi
@@ -227,6 +235,8 @@ const LandingPagePage = () => {
                         </div>
                       </div>
                     </div>
+
+                    {/* //! FITUR 2 */}
                     <div className="flex md:flex-col flex-row md:gap-10 gap-[73px] items-center justify-start w-full">
                       <div className="h-[426px] relative w-[47%] md:w-full">
                         <div className="bg-gradient  h-[231px] ml-auto mr-[18px] mt-[15px] rounded-[115px] w-[231px]"></div>
@@ -288,6 +298,8 @@ const LandingPagePage = () => {
                         </Text>
                       </div>
                     </div>
+
+                    {/* //! FITUR 3 */}
                     <div className="flex md:flex-col flex-row md:gap-10 gap-[73px] items-center justify-start w-full">
                       <div className="flex flex-1 flex-col gap-[25px] items-start justify-start w-full">
                         <div className="flex md:flex-col flex-row font-montserrat gap-8 items-center justify-start w-full">
@@ -350,6 +362,8 @@ const LandingPagePage = () => {
                   </div>
                 </div>
               </div>
+
+              {/* //? BRAND KAMI SECTION //////////////////////// */}
               <div className="flex flex-col font-montserrat md:gap-10 gap-20 items-center justify-start w-auto md:w-full">
                 <div className="flex flex-col items-center justify-start w-auto md:w-full">
                   <div className="flex flex-col gap-5 items-center justify-start w-auto md:w-full">
@@ -435,6 +449,8 @@ const LandingPagePage = () => {
                   </div>
                 </div>
               </div>
+
+              {/* //? GALERI SECTION /////////////////////////// */}
               <div
                 className="flex flex-col font-montserrat md:gap-10 gap-[60px] items-center justify-start w-auto md:w-full"
                 id="block1"
@@ -497,6 +513,8 @@ const LandingPagePage = () => {
                   </div>
                 </div>
               </div>
+
+              {/* //? CTA SECTION ///////////////////////////////// */}
               <div
                 className="bg-cover bg-no-repeat flex flex-col font-montserrat h-[572px] items-center justify-end p-24 md:px-10 sm:px-5 rounded-[25px] w-[85%] md:w-full"
                 style={{ backgroundImage: "url('images/img_frame11381.png')" }}
@@ -531,8 +549,10 @@ const LandingPagePage = () => {
                   </div>
                 </div>
               </div>
+              {/* //? END OF CTA SECTION */}
             </div>
           </div>
+          {/* //? FOOTER SECTION /////////////////////////////// */}
           <Footer className="flex font-montserrat items-center justify-center md:px-5 w-full" />
         </div>
       </div>
