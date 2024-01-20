@@ -7,17 +7,17 @@ const Footer = (props) => {
     <>
       <footer className={props.className}>
         <div
-          className="bg-cover bg-gray-800_01 bg-no-repeat flex flex-col h-[583px] items-center justify-center p-[85px] md:px-10 sm:px-5 w-full"
+          className="bg-cover bg-gray-800_01 bg-no-repeat flex flex-col items-center justify-center p-[85px] md:px-10 sm:px-5 w-full"
           style={{ backgroundImage: "url('images/img_group48.svg')" }}
         >
-          <div className="flex flex-col md:gap-10 gap-[66px] items-center justify-start my-[17px] w-auto md:w-full">
-            <div className="flex md:flex-col flex-row md:gap-10 gap-[145px] items-start justify-start w-auto md:w-full">
+          <div className="flex flex-col md:gap-10 gap-[66px] items-center justify-start my-[17px]">
+            <div className="flex flex-col md:flex-row md:gap-10 gap-[145px] items-start justify-start">
               <Img
                 className="h-[130px] md:h-auto object-cover w-[130px]"
                 src="images/img_image1.png"
                 alt="imageOne_One"
               />
-              <div className="flex md:flex-col flex-row md:gap-10 gap-40 items-start justify-start w-auto md:w-full">
+              <div className="flex flex-col md:flex-row md:gap-10 gap-40 items-start justify-start">
                 <div className="flex flex-col gap-8 items-start justify-start w-auto">
                   <Text
                     className="text-[22px] text-gray-100 sm:text-lg md:text-xl w-auto"
