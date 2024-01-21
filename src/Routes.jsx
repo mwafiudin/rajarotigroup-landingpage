@@ -9,9 +9,10 @@ const ProjectRoutes = () => {
     <React.Suspense fallback={<>Loading...</>}>
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
+          {/* <Route path="/" element={<Home />} /> */}
+          <Route path="/" element={<LandingPage />} />
           <Route path="*" element={<NotFound />} />
-          <Route path="/landingpage" element={<LandingPage />} />
+          {/* <Route path="/landingpage" element={<LandingPage />} /> */}
           <Route path="/hubunganinvestor" element={<HubunganInvestor />} />
         </Routes>
       </Router>
