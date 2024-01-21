@@ -49,7 +49,7 @@ const LandingPagePage = () => {
             alt="img202309241950"
           />
           {/*  */}
-          <div className="w-full space-y-12">
+          <div id="block1" className="w-full space-y-12">
             <Text
               className="text-2xl text-center text-orange-400 sm:text-xl tracking-[0.24px]"
               size="txtMontserratRomanSemiBold24"
@@ -125,7 +125,7 @@ const LandingPagePage = () => {
               />
               <div className="flex flex-col w-full md:w-[50%] gap-[30px] items-center md:items-start justify-start">
                 <Text
-                  className="leading-[34.00px] text-center text-gray-600 text-xl tracking-[0.20px]"
+                  className="leading-[34.00px] text-center md:text-left text-gray-600 text-xl tracking-[0.20px]"
                   size="txtNunitoMedium20"
                 >
                   Di Raja Roti Group, kami bangga dengan komitmen kami untuk
@@ -279,9 +279,9 @@ const LandingPagePage = () => {
                 Tingkatkan Kreasi Kuliner Anda dengan Tepung Roti Berkualitas
                 Kami
               </Text>
-              <div className="flex flex-col md:flex-row font-nunito gap-4 items-center justify-between w-full py-24">
+              <div className="flex flex-col md:flex-row font-nunito items-center justify-between space-y-8 md:space-x-8 w-full py-24">
                 <Img
-                  className="md:flex-1 h-[343px] sm:h-auto object-cover md:w-[50%]"
+                  className="md:flex-1 h-[343px] sm:h-auto md:w-[50%]"
                   src="images/img_image26.png"
                   alt="imageTwentySix"
                 />
@@ -293,7 +293,7 @@ const LandingPagePage = () => {
                 </Text>
                 <div className="flex flex-col md:w-[46%] text-center gap-[52px] items-center md:items-start md:justify-start">
                   <Text
-                    className="leading-[34.00px] text-center text-gray-600 text-xl tracking-[0.20px]"
+                    className="leading-[34.00px] text-center md:text-left text-gray-600 text-xl tracking-[0.20px]"
                     size="txtNunitoMedium20"
                   >
                     Raja Roti Group memiliki berbagai merek yang menjangkau
@@ -357,7 +357,7 @@ const LandingPagePage = () => {
         </div>
 
         {/*  */}
-        <div className="px-4 md:px-24 ">
+        <div id="block2" className="px-4 md:px-24 ">
           <div className="hidden md:flex flex-col gap-5 items-center justify-start md:w-full md:pt-24">
             <Text
               className="text-2xl md:text-[22px] text-center text-orange-400 sm:text-xl tracking-[0.24px] w-auto"
