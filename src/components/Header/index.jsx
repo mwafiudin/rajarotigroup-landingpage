@@ -54,7 +54,7 @@ const Header = (props) => {
               className="common-pointer"
               size="txtNunitoRegular18"
               onClick={() => {
-                handleSectionNavigation("block2");
+                handleSectionNavigation("block1");
               }}
             >
               Tentang Kami
@@ -67,7 +67,7 @@ const Header = (props) => {
               className="common-pointer"
               size="txtNunitoRegular18"
               onClick={() => {
-                handleSectionNavigation("block1");
+                handleSectionNavigation("block2");
               }}
             >
               Galeri
