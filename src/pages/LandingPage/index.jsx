@@ -9,7 +9,7 @@ const LandingPagePage = () => {
   return (
     <>
       <div className="bg-gray-100 font-nunito items-center justify-end w-full text-center">
-        <Header className="flex relative mx-auto px-4 md:px-24 items-center py-12" />
+        <Header className="flex relative mx-auto px-6 md:px-24 items-center py-12" />
         <div className="px-4 md:px-24 space-y-12 md:space-y-24">
           <div className="space-y-6">
             <div className="flex justify-center">
@@ -85,31 +85,16 @@ const LandingPagePage = () => {
             </Button>
           </div>
           {/* BRAND */}
-          <div className="flex flex-col lg:flex-row justify-center space-y-6 lg:space-x-20 items-center">
-            <div className="relative shadow-xl bg-white-A700_bc rounded-[32px] w-[320px] h-[320px]">
-              <Img
-                className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-12"
-                src="images/img_image15.png"
-                alt="imageFifteen"
-              />
-            </div>
-            <div className="relative shadow-xl bg-white-A700_bc justify-center rounded-[32px] w-[320px] h-[320px] lg:w-[400px] lg:h-[400px]">
-              <Img
-                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-12 lg:p-16"
-                src="images/img_image19.png"
-                alt="imageNineteen"
-              />
-            </div>
-            <div className="relative shadow-xl bg-white-A700_bc rounded-[32px] w-[320px] h-[320px]">
-              <Img
-                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-12"
-                src="images/img_image18.png"
-                alt="imageEighteen"
-              />
-            </div>
+          <div className="flex flex-col lg:flex-row justify-center space-y-6 lg:space-y-0 lg:space-x-20 items-center">
+            <Img className="max-w-[300px]" src="images/brand1.png" alt="b1" />
+            <Img
+              className="max-w-[300px] lg:max-w-[340px]"
+              src="images/brand2.png"
+              alt="b2"
+            />
+            <Img className="max-w-[300px]" src="images/brand3.png" alt="b3" />
           </div>
           {/* */}
-          {/* <div className="space-y-24"> */}
           <div className="space-y-16">
             <Text
               className="md:w-2/3 mx-auto text-3xl lg:text-4xl text-center text-gray-800 tracking-[0.15px]"
@@ -152,21 +137,16 @@ const LandingPagePage = () => {
               <div className="md:w-[47%]">
                 <div className="space-y-8">
                   <div className="flex flex-col md:flex-row font-montserrat gap-8 items-center justify-start">
+                    <Img className="" src="images/n1.png" alt="p1" />
                     <Text
-                      className="bg-gray-800  justify-center sm:pl-5 pl-[27px] pr-2.5 pt-0.5 rounded-[50%] md:text-5xl text-6xl text-gray-100 tracking-[0.18px] w-[60px]"
-                      size="txtMontserratSemiBold60"
-                    >
-                      1
-                    </Text>
-                    <Text
-                      className="flex-1 text-center text-3xl text-gray-800 tracking-[0.11px]"
+                      className="flex-1 text-center text-3xl md:text-2xl lg:text-3xl text-gray-800 tracking-[0.11px]"
                       size="txtMontserratSemiBold35"
                     >
                       Inovasi Teknologi untuk Meningkatkan Industri
                     </Text>
                   </div>
                   <div className="flex md:hidden">
-                    <Point1 />
+                    <Img className="w-full" src="images/point1.png" alt="p1" />
                   </div>
                   <Text
                     className="leading-[34.00px] text-center md:text-left text-gray-600 text-xl tracking-[0.20px]"
@@ -184,28 +164,23 @@ const LandingPagePage = () => {
                 </div>
               </div>
               <div className="hidden md:flex w-[47%]">
-                <Point1 />
+                <Img className="" src="images/point1.png" alt="p1" />
               </div>
             </div>
             {/*  */}
             <div className="flex items-center justify-between md:flex-row-reverse">
               <div className="space-y-8 w-full md:w-[47%]">
                 <div className="flex flex-col md:flex-row font-montserrat gap-8 items-center justify-start">
+                  <Img className="" src="images/n2.png" alt="p1" />
                   <Text
-                    className="bg-gray-800 h-[60px] justify-center sm:pl-5 pl-[22px] pr-[3px] rounded-[50%] md:text-5xl text-6xl text-gray-100 tracking-[0.18px] w-[60px]"
-                    size="txtMontserratSemiBold60"
-                  >
-                    2
-                  </Text>
-                  <Text
-                    className="flex-1 text-center text-3xl text-gray-800 tracking-[0.11px]"
+                    className="flex-1 text-center text-3xl md:text-2xl lg:text-3xl text-gray-800 tracking-[0.11px]"
                     size="txtMontserratSemiBold35"
                   >
                     Kualitas terbaik adalah Suatu Kewajiban
                   </Text>
                 </div>
                 <div className="flex md:hidden">
-                  <Point2 />
+                  <Img className="w-full" src="images/point2.png" alt="p2" />
                 </div>
                 <Text
                   className="leading-[34.00px] text-center md:text-left text-gray-600 text-xl tracking-[0.20px]"
@@ -223,28 +198,23 @@ const LandingPagePage = () => {
                 </Text>
               </div>
               <div className="hidden md:flex w-[47%]">
-                <Point2 />
+                <Img className="" src="images/point2.png" alt="p2" />
               </div>
             </div>
             {/*  */}
             <div className="flex flex-col md:flex-row items-center justify-between w-full">
               <div className="space-y-8 w-full md:w-[47%]">
                 <div className="flex flex-col md:flex-row font-montserrat gap-8 items-center justify-start w-full">
+                  <Img className="" src="images/n3.png" alt="p1" />
                   <Text
-                    className="bg-gray-800 h-[60px] justify-center sm:pl-5 pl-6 pt-0.5 rounded-[50%] md:text-5xl text-6xl text-gray-100 tracking-[0.18px] w-[60px]"
-                    size="txtMontserratSemiBold60"
-                  >
-                    3
-                  </Text>
-                  <Text
-                    className="flex-1 text-center text-3xl md:text-left text-gray-800 tracking-[0.11px]"
+                    className="flex-1 text-center text-3xl md:text-2xl lg:text-3xl md:text-left text-gray-800 tracking-[0.11px]"
                     size="txtMontserratSemiBold35"
                   >
                     Partner Anda Menuju Kesuksesan
                   </Text>
                 </div>
                 <div className="flex md:hidden">
-                  <Point3 />
+                  <Img className="w-full" src="images/point3.png" alt="p3" />
                 </div>
                 <Text
                   className="leading-[34.00px] text-center md:text-left text-gray-600 text-xl tracking-[0.20px]"
@@ -261,7 +231,7 @@ const LandingPagePage = () => {
                 </Text>
               </div>
               <div className="hidden md:flex md:w-[47%]">
-                <Point3 />
+                <Img className="" src="images/point3.png" alt="p3" />
               </div>
             </div>
             {/*PRODUCT*/}
