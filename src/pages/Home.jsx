@@ -11,7 +11,7 @@ const Home = () => {
       </p>
       <ul>
         <li>
-          <Link to="/landingpage">LandingPage</Link>
+          <Link to="/">LandingPage</Link>
         </li>
         <li>
           <Link to="/hubunganinvestor">HubunganInvestor</Link>

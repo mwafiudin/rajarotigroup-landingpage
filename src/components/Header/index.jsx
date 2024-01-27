@@ -42,7 +42,7 @@ const Header = (props) => {
             <Text
               className="common-pointer"
               size="txtNunitoBold18"
-              onClick={() => navigate("/landingpage")}
+              onClick={() => navigate("/")}
             >
               Beranda
             </Text>
@@ -97,7 +97,7 @@ const Header = (props) => {
             className="h-[83px] p-4 md:p-2 md:h-auto object-cover w-[83px] hover:cursor-pointer"
             src="images/img_image1.png"
             alt="imageOne"
-            onClick={() => navigate("/landingpage")}
+            onClick={() => navigate("/")}
           />
         </div>
 
@@ -134,7 +134,7 @@ const Header = (props) => {
           <Link
             className={`${
               open ? "" : "hidden"
-            } space-y-4 absolute right-0 lg:hidden`}
+            } space-y-4 absolute right-0 lg:hidden bg-gray-100 rounded-xl p-5`}
           />
         </div>
 

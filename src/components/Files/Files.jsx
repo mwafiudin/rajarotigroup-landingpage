@@ -2,7 +2,7 @@ import { Button, Img, Text } from "components";
 
 const Files = ({ title }) => {
   return (
-    <div className="flex md:gap-10 gap-[61px] items-center my-0">
+    <div className="flex md:gap-10 items-center my-0">
       <div className="flex flex-row gap-[7px] items-center">
         <Img
           className="h-[38px] w-[38px]"
@@ -16,9 +16,9 @@ const Files = ({ title }) => {
           {title}
         </Text>
       </div>
-      <div className="flex flex-row gap-[29px] items-start">
+      <div className="flex flex-row gap-[13px] md:gap-[29px] items-start">
         <Button
-          className="cursor-pointer space-x-2 flex items-center justify-center md:min-w-[130px] rounded-[25px]"
+          className="cursor-pointer space-x-2 flex items-center justify-center md:min-w-[130px] rounded-full"
           leftIcon={
             <Img
               className="h-[30px]"
@@ -36,7 +36,7 @@ const Files = ({ title }) => {
           </div>
         </Button>
         <Button
-          className="cursor-pointer space-x-2 flex items-center justify-center md:min-w-[169px] rounded-[25px]"
+          className="cursor-pointer space-x-2 flex items-center justify-center md:min-w-[169px] rounded-full"
           leftIcon={
             <Img
               className="h-[30px]"

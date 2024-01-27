@@ -30,7 +30,7 @@ const HubunganInvestorPage = () => {
         <Button
           className={`${
             index === tab ? "bg-[#FFA132]" : ""
-          } cursor-pointer font-medium h-10 min-w-[306px] rounded-[20px] text-base text-center tracking-[0.40px]`}
+          } cursor-pointer font-medium h-10 min-w-max px-[20px] rounded-[20px] text-base text-center tracking-[0.40px]`}
           color="gray_700"
           size="xs"
           variant="outline"
@@ -63,8 +63,8 @@ const HubunganInvestorPage = () => {
               triwulan, dan tahunan.
             </Text>
           </div>
-          <div className="flex flex-col gap-[52px] items-start mt-[89px] w-full">
-            <div className="flex overflow-scroll w-full gap-2 items-start">
+          <div className="flex flex-col gap-[52px] items-start mt-[89px]">
+            <div className="flex overflow-scroll w-full gap-2 items-start w-screen">
               {page.map((title, i) => (
                 <ButtonTab key={title} title={title} index={i + 1} />
               ))}
