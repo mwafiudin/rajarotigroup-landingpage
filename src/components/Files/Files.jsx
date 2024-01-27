@@ -10,7 +10,7 @@ const Files = ({ title }) => {
           alt="documenttextsvg"
         />
         <Text
-          className="text-center text-gray-900 text-xl tracking-[0.50px]"
+          className="text-left text-gray-900 text-xl tracking-[0.50px]"
           size="txtNunitoSemiBold20"
         >
           {title}

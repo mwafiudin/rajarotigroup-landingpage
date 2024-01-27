@@ -62,7 +62,7 @@ const Header = (props) => {
           </a>
         </li>
         <li>
-          <a className="capitalize hover:font-bold hover:text-gray-800 text-gray-900 text-lg tracking-[0.18px]">
+          <a className="hidden lg:flex capitalize hover:font-bold hover:text-gray-800 text-gray-900 text-lg tracking-[0.18px]">
             <Text
               className="common-pointer"
               size="txtNunitoRegular18"
@@ -94,9 +94,10 @@ const Header = (props) => {
       <header className={props.className}>
         <div>
           <Img
-            className="h-[83px] p-4 md:p-2 md:h-auto object-cover w-[83px]"
+            className="h-[83px] p-4 md:p-2 md:h-auto object-cover w-[83px] hover:cursor-pointer"
             src="images/img_image1.png"
             alt="imageOne"
+            onClick={() => navigate("/landingpage")}
           />
         </div>
 
@@ -115,7 +116,7 @@ const Header = (props) => {
           >
             <span className="sr-only">Open main menu</span>
             <svg
-              className="w-5 h-5"
+              className="w-5 h-5 text-[#1D1D1D]"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -123,15 +124,17 @@ const Header = (props) => {
             >
               <path
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M1 1h15M1 7h15M1 13h15"
               />
             </svg>
           </button>
           <Link
-            className={`${open ? "" : "hidden"} absolute right-0 lg:hidden`}
+            className={`${
+              open ? "" : "hidden"
+            } space-y-4 absolute right-0 lg:hidden`}
           />
         </div>
 

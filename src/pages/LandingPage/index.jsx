@@ -1,16 +1,16 @@
 import React from "react";
 
 import { Button, Img, Line, Text } from "components";
-import { Point1, Point2, Point3 } from "components/Point/Point";
 import Footer from "components/Footer";
 import Header from "components/Header";
+import Brand from "components/Brand/Index";
 
 const LandingPagePage = () => {
   return (
     <>
       <div className="bg-gray-100 font-nunito items-center justify-end w-full text-center">
-        <Header className="flex relative mx-auto px-6 md:px-24 items-center py-12" />
-        <div className="px-4 md:px-24 space-y-12 md:space-y-24">
+        <Header className="flex sticky top-0 bg-gray-100 z-10 w-full mx-auto px-[12%] items-center pt-8" />
+        <div className="px-[12%] space-y-12 md:space-y-24 pt-20">
           <div className="space-y-6">
             <div className="flex justify-center">
               <Img className="" src="images/img_lock.svg" alt="lock" />
@@ -85,14 +85,8 @@ const LandingPagePage = () => {
             </Button>
           </div>
           {/* BRAND */}
-          <div className="flex flex-col lg:flex-row justify-center space-y-6 lg:space-y-0 lg:space-x-20 items-center">
-            <Img className="max-w-[300px]" src="images/brand1.png" alt="b1" />
-            <Img
-              className="max-w-[300px] lg:max-w-[340px]"
-              src="images/brand2.png"
-              alt="b2"
-            />
-            <Img className="max-w-[300px]" src="images/brand3.png" alt="b3" />
+          <div>
+            <Brand />
           </div>
           {/* */}
           <div className="space-y-16">
@@ -104,7 +98,7 @@ const LandingPagePage = () => {
             </Text>
             <div className="flex flex-col md:flex-row justify-between items-center space-y-8">
               <Img
-                className=" sm:cover rounded-[25px] w-full md:w-[47%]"
+                className="rounded-[25px] w-full md:w-[47%]"
                 src="images/img_screenshot20230925214358.png"
                 alt="screenshot20230"
               />
@@ -251,7 +245,7 @@ const LandingPagePage = () => {
               </Text>
               <div className="flex flex-col md:flex-row font-nunito items-center justify-between space-y-8 md:space-x-8 w-full py-24">
                 <Img
-                  className="md:flex-1 h-[343px] sm:h-auto md:w-[50%]"
+                  className="md:w-[50%]"
                   src="images/img_image26.png"
                   alt="imageTwentySix"
                 />
@@ -350,23 +344,23 @@ const LandingPagePage = () => {
           <div className="hidden md:flex flex-wrap">
             <Img
               src="images/img_screenshot20230925210243.png"
-              className="w-3/5 p-6"
+              className="w-3/5 p-4"
             />
             <Img
               src="images/img_screenshot20230926211851_400x447.png"
-              className="w-2/5 p-6"
+              className="w-2/5 p-4"
             />
             <Img
               src="images/img_screenshot20230926214930.png"
-              className="w-1/3 p-6"
+              className="w-1/3 p-4"
             />
             <Img
-              src="images/img_screenshot20230925214358.png"
-              className="w-1/3 p-6"
+              src="images/img_screenshot20230925214440.png"
+              className="w-1/3 p-4"
             />
             <Img
               src="images/img_screenshot20230925210707.png"
-              className="w-1/3 p-6"
+              className="w-1/3 p-4"
             />
           </div>
           <div className="py-24 md:py-36">
